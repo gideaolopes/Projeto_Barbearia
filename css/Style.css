@@ -113,6 +113,9 @@ body {
     font-weight: 700;
 
 }
+p{
+  text-align: justify !important;
+}
 
 .content p {
     color: #fff;
@@ -464,12 +467,4 @@ img, video {
 
 #toggle-services:hover {
   background-color: #555;
-}
-@media (max-width: 768px) {
-  .row content {
-    text-align: justify;
-  }
- p {
-  text-align: justify;
- }
 }
