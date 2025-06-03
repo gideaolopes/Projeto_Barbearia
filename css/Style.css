@@ -364,17 +364,17 @@ img, video {
 /* Menu toggle base */
 @media (max-width: 768px) {
   .menu-toggle {
-    position: fixed; /* fixa na tela */
-    top: 20px;       /* distância do topo */
-    left: 20px;      /* distância da esquerda */
+    position: fixed; 
+    top: 20px;       
+    left: 20px;      
     width: 30px;
     height: 20px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    z-index: 1001;   /* fica acima do menu */
-    background: transparent; /* se quiser, pode colocar um bg para destacar */
+    z-index: 1001;   
+    background: transparent; 
   }
 }
 
@@ -417,7 +417,7 @@ img, video {
 /* Ajuste para o menu-toggle no mobile */
 @media (max-width: 768px) {
   .menu-toggle {
-    display: flex; /* já estava */
+    display: flex;
     width: 35px;
     height: 30px;
   }
@@ -429,8 +429,8 @@ img, video {
   .header section {
     flex-direction: column;
     align-items: center;
-    padding: 2rem 1rem; /* aumenta o espaço interno */
-    gap: 1rem; /* separa os itens verticalmente */
+    padding: 2rem 1rem;
+    gap: 1rem; 
   }
 
   .header {
@@ -438,7 +438,7 @@ img, video {
   }
 
   .navbar {
-    top: 50px; /* desce o menu suspenso para não colar no topo */
+    top: 50px; 
   }
 }
 /* botao ver mais */
@@ -464,4 +464,12 @@ img, video {
 
 #toggle-services:hover {
   background-color: #555;
+}
+@media (max-width: 768px) {
+  .row content {
+    text-align: justify;
+  }
+ p {
+  text-align: justify;
+ }
 }
