@@ -84,42 +84,25 @@
   </div>
 </section>
 <section class="service" id="service">
-    <h2 class="title">Nossos <span>Serviços</span></h2>
+  <h2 class="title">Nossos <span>Serviços</span></h2>
 
-    <div class="box-container">
-        <div class="box">
-            <h3>Corte social</h3>
-            <div class="price">R$20,00</div>
-        </div>
-        <div class="box">
-            <h3>Corte 0,5</h3>
-            <div class="price">R$25,00</div>
-        </div>
-        <div class="box">
-            <h3>Sobrancelhas</h3>
-            <div class="price">R$15,00</div>
-        </div>
-        <div class="box">
-            <h3>Barba</h3>
-            <div class="price">R$30,00</div>
-        </div>
-        <div class="box">
-            <h3>Barba terapia</h3>
-            <div class="price">R$40,00</div>
-        </div>
-        <div class="box">
-            <h3>Corte ate Criança 3 anos</h3>
-            <div class="price">R$10,00</div>
-        </div>
-        <div class="box">
-            <h3>Visagismo</h3>
-            <div class="price">R$70,00</div>
-        </div>
-         <div class="box">
-            <h3>Corte e Barba</h3>
-            <div class="price">R$50,00</div>
-        </div>
-    </div>
+  <div class="box-container">
+    <!-- Sempre visíveis -->
+    <div class="box"><h3>Corte social</h3><div class="price">R$20,00</div></div>
+    <div class="box"><h3>Corte 0,5</h3><div class="price">R$25,00</div></div>
+    <div class="box"><h3>Sobrancelhas</h3><div class="price">R$15,00</div></div>
+    <div class="box"><h3>Barba</h3><div class="price">R$30,00</div></div>
+
+    <!-- Escondidos inicialmente -->
+    <div class="box hidden"><h3>Barba terapia</h3><div class="price">R$40,00</div></div>
+    <div class="box hidden"><h3>Corte até Criança 3 anos</h3><div class="price">R$10,00</div></div>
+    <div class="box hidden"><h3>Visagismo</h3><div class="price">R$70,00</div></div>
+    <div class="box hidden"><h3>Corte e Barba</h3><div class="price">R$50,00</div></div>
+  </div>
+
+  <div class="show-more-container">
+    <button id="toggle-services">Ver mais</button>
+  </div>
 </section>
 
 <section class="address" id="address">
@@ -170,6 +153,19 @@ menuToggle.addEventListener('click', () => {
   navbar.classList.toggle('active');
 });
 </script>
+<script>
+  const toggleButton = document.getElementById('toggle-services');
+  const hiddenBoxes = document.querySelectorAll('.box.hidden');
+  let expanded = false;
 
+  toggleButton.addEventListener('click', () => {
+    hiddenBoxes.forEach(box => {
+      box.style.display = expanded ? 'none' : 'block';
+    });
+
+    toggleButton.textContent = expanded ? 'Ver mais' : 'Ver menos';
+    expanded = !expanded;
+  });
+</script>
 </body>
 </html>
