@@ -227,43 +227,35 @@ p{
     margin-top: 1rem;
 }
 /*==rodape ==*/
-.footer  {
+.footer {
     text-align: center;
     background: var(--bg);
     padding: 3rem 3rem;
 }
-.footer .share{
+
+.footer .share {
     padding: 1rem 0;
-}   
-.footer .share img{
-  margin: 1.3rem0;
-  cursor: pointer;
-  border-radius: 50%;
-  padding: 1rem;
-  transition: background-color 0.3s;
 }
+
+.footer .share img {
+    margin: 1.3rem 0;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 1rem;
+    transition: background-color 0.3s;
+}
+
 .footer .share img:hover {
-   background-color: var(--main-color);
+    background-color: var(--main-color);
 }
-footer p {
-    color: #fff;
+
+.footer p {
+    color: rgba(248, 248, 255, 0.821);
     font-size: 1rem;
     margin-top: 1rem;
     text-align: center;
-    color: rgba(10, 10, 190, 0.821);
 }
 
-.share {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
-.share h3 {
-    color: #fff;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
 
 /* === RESPONSIVIDADE === */
 @media (max-width: 768px) {
