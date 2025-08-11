@@ -12,7 +12,6 @@ Este é um site institucional completo para a Barbearia Baruch, pensado para ser
 
 📍 Encontrar o endereço via Google Maps integrado
 
-🌙 Alternar entre modo escuro e claro com um clique
 
 📱 Navegar com facilidade em qualquer dispositivo (responsivo)
 
@@ -27,8 +26,6 @@ JavaScript Vanilla – Para interatividade como:
 
 Carrossel funcional
 
-Alternância de tema escuro/claro com troca de ícones
-
 Menu responsivo para mobile
 
 Google Fonts – Fontes Poppins e Roboto para estilo e leitura
@@ -39,8 +36,6 @@ Favicon personalizado – Logotipo da barbearia na aba do navegador
 
 💡 Destaques do Projeto
 ⚡ Interface leve e rápida
-
-🌗 Tema dinâmico (Dark/Light Mode)
 
 📷 Carrossel com galeria de cortes
 

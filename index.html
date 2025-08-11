@@ -123,34 +123,6 @@
     <p>&copy; 2025 Dev.Gideão Lopes. Todos os direitos reservados.</p>
 </footer>
 <script src="carousel.js"></script>
-
-<script>
- const toggleBtn = document.getElementById('toggle-theme');
-const instagramIcon = document.getElementById('icon-instagram');
-const whatsappIcon = document.getElementById('icon-whatsapp');
-
-toggleBtn.addEventListener('click', () => {
-  document.body.classList.toggle('light-mode');
-
-  const isLight = document.body.classList.contains('light-mode');
-
-  instagramIcon.src = isLight 
-    ? 'https://img.icons8.com/ios-glyphs/50/000000/instagram-new.png' 
-    : 'https://img.icons8.com/ios-glyphs/50/ffffff/instagram-new.png';
-
-  whatsappIcon.src = isLight 
-    ? 'https://img.icons8.com/ios-glyphs/50/000000/whatsapp.png' 
-    : 'https://img.icons8.com/ios-glyphs/50/ffffff/whatsapp.png';
-
-  toggleBtn.textContent = isLight ? "☀️" : "🌙";
-});
-  const menuToggle = document.getElementById('menu-toggle');
-const navbar = document.getElementById('navbar');
-
-menuToggle.addEventListener('click', () => {
-  navbar.classList.toggle('active');
-});
-</script>
 <script>
   const toggleButton = document.getElementById('toggle-services');
   const hiddenBoxes = document.querySelectorAll('.box.hidden');
